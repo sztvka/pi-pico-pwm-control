@@ -26,11 +26,11 @@ pwm_control_set_ms(20, 1.5f, 19); //PWM with 20ms period and 1.5ms ontime on gpi
 ### Syntax
 ```c
 //Initialize PWM peripheral on pin
-pwm_control_init(uint pin)
+pwm_control_init(uint pin);
 
 // Set PWM frequency and duty cycle, 
 // returns 0 on success, 1 on failure
-pwm_control_set(uint freq, float duty, uint pin)
+pwm_control_set(uint freq, float duty, uint pin);
 
 // period in milliseconds, ontime in milliseconds, gpio pin, 
 // returns 0 on success, 1 on failure
