@@ -5,7 +5,7 @@ Library for setting Raspberry Pi Pico's PWM as Hz with dutycycle or miliseconds.
 
 ## Usage
 
-1. Clone the repo and enable PWM peripheral and attach files in CMakeLists.txt
+1. Clone the repo, enable PWM peripheral and attach files in CMakeLists.txt
 ```cmake
 add_executable(myproject
         main.c
@@ -20,7 +20,7 @@ target_link_libraries(myproject hardware_pwm)
 pwm_control_init(20); //init on gpio 20
 pwm_control_init(19); //init on gpio 19
 pwm_control_set(1000, 0.25, 20); // output 1kHz 25% dutycycle on gpio 20
-pwm_control_set_ms(20, 1.5f, 19); //PWM with 20ms period and 1.5ms ontime on gpio 19 (at ex. set a servo to mid position)
+pwm_control_set_ms(20, 1.5f, 19); //PWM with 20ms period and 1.5ms ontime on gpio 19
 ```
 
 ### Syntax
